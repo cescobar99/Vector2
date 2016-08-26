@@ -194,6 +194,10 @@ public class Vector2 extends javax.swing.JFrame {
 
     private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
     int pares=0, impares=0, primos=0;
+    if(txtLongitud.getText().trim().equals("")){
+    JOptionPane.showMessageDialog(this, "Por favor llene el campo longitud");
+    txtLongitud.requestFocusInWindow();
+    }
     for (int i = 0; i < v.length; i++) {
     txtResultado.append(v[i]+"\n");      
     }
